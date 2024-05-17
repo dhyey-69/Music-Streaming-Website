@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+    <div class="img">
+        <div class="content">
+            <header>Log In Page</header>
+            <form action="login" method="POST">
+                <div class="field">
+                    <span class="fa fa-user"></span>
+                    <input type="text" name="email" required placeholder="Enter Email"/>
+                </div>
+                <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="password" name="password" required placeholder="Password" class="pass-key">
+                    <span class="show">SHOW</span>
+                </div>
+                <div class="pass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="field">
+                    <input type="submit" value="LOG IN">
+                </div>
+                <div class="signup"><a href="./signup.html">Don't Have Account? Sign Up</a></div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const pf=document.querySelector(".pass-key");
+        const showbtn=document.querySelector(".show");
+        showbtn.addEventListener("click", function () {
+            if (pf.type === "password") 
+            {
+                pf.type="text";
+                showbtn.textContent="HIDE";
+                showbtn.style.color="#3498db";
+            }
+            else{
+                pf.type="password";
+                showbtn.textContent="SHOW";
+                showbtn.style.color="#222";
+            }
+        });
+    </script>
+</body>
+</html>

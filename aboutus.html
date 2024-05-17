@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+    <title>About Us</title>
+    <style>
+        body{
+            background: url("./1.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .card{
+            position: relative;
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255,255,255,0.5);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        }
+        .img-box{
+            position: absolute;
+            top: -25%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            transform: translateY(30px) scale(0.5);
+        }
+        .img-box img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+            bottom: -180px;
+        }
+        .content .detail h2{
+            color: #03a9f4;
+            font-size: 1.6em;
+            font-weight: bolder;
+        }
+        .content .detail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .content .detail h2 span{
+            font-size: 0.7em;
+            color: #03a9f4;
+            font-weight: bold;
+        }
+        .sci{
+            position: relative;
+            display: flex;
+            left: -20px;
+        }
+        .sci li{
+            list-style: none;
+            margin: 4px;
+        }
+        .sci li a{
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            border-radius: 50%;
+            background: transparent;
+            font-size: 1.5em;
+            color: #444;
+            text-decoration: none;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            transition: 0.5s;
+        }
+        .sci li a:hover{
+            background: #03a9f4;
+            color: white;
+        }
+        .container{
+            display:flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+        }
+        .Dhyey{
+            margin-top: 1000px 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh
+        }
+    </style>
+</head>
+<body>
+        <div class="Dhyey">
+            <div class="card">
+                <div class="img-box">
+                    <img src="Dabi-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="detail">
+                        <h2>Dhyey Bhatt<br><span>21BT04014</span></h2>
+                        <ul class="sci">
+                            <li>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </li>
+       
+                            <li>
+                                <a href="https://github.com/dhyey-69"><i class="fab fa-github"></i></a>
+                            </li>
+       
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+       
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

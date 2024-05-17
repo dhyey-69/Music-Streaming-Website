@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+    <div class="img">
+        <div class="content">
+            <header>Sign Up Page</header>
+            <form action="signup" method="POST">
+                <div class="field">
+                    <span class="fa fa-user"></span>
+                    <input type="text" name="email" required placeholder="Enter Email"/>
+                </div>
+                <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="password" name="password" required placeholder="Password" class="pass-key">
+                    <span class="show">SHOW</span>
+                </div>
+                <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="password" name="confirm_password" required placeholder="Confirm Password" class="pass-key">
+                    <span class="show">SHOW</span>
+                </div>
+                <div class="field">
+                    <input type="submit" value="SIGN UP">
+                </div>
+                <div class="signup"><a href="index.html">Already have an account? Log In</a></div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const passFields = document.querySelectorAll(".pass-key");
+        const showBtns = document.querySelectorAll(".show");
+
+        showBtns.forEach((showBtn, index) => {
+            showBtn.addEventListener("click", function () {
+                if (passFields[index].type === "password") {
+                    passFields[index].type="text";
+                    showBtn.textContent="HIDE";
+                    showBtn.style.color="#3498db";
+                } else {
+                    passFields[index].type="password";
+                    showBtn.textContent="SHOW";
+                    showBtn.style.color="#222";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
